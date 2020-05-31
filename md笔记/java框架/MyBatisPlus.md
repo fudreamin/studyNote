@@ -163,13 +163,13 @@ UUID(4);
 | ASSIGN_ID   | MP 分配 ID，Long、Integer、String |
 | ASSIGN_UUID | 分配 UUID，Strinig                |
 
-INPUT 如果开发者没有手动赋值，则数据库通过自增的方式给主键赋值，如果开发者手动赋值，则存入该值。
+INPUT 如果开发者没有手动赋值，则数据库通过自增的方式给主键赋值（数据库没有设置自增的话会直接报错），如果开发者手动赋值，则存入该值。
 
-AUTO 默认就是数据库自增，开发者无需赋值。
+AUTO 默认就是数据库自增，开发者无需赋值，也无法手动设置id。（需要先在数据库设置自增）。
 
 ASSIGN_ID MP 自动赋值，雪花算法。
 
-ASSIGN_UUID 主键的数据类型必须是 String，自动生成 UUID 进行赋值
+ASSIGN_UUID 主键的数据类型必须是 String，自动生成 UUID 进行赋值。（字符串无法自增，需要先取消自增）。
 
 
 

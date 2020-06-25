@@ -201,7 +201,7 @@ mysql -uroot -p
 10、修改密码
 
 ```
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 ```
 
 11、使用新密码登录

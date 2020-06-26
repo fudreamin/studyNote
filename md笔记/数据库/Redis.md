@@ -491,5 +491,113 @@
   zincrby key increment member
   ```
 
-  
 
+## 5、通用操作
+
+### 5.1 key的通用操作
+
+- 删除指定key
+
+  ```
+  del key
+  ```
+
+- 获取key是否存在
+
+  ```
+  exists key
+  ```
+
+- 获取key的类型
+
+  ```
+  type key
+  ```
+
+- 为指定key设置有效期
+
+  ```
+  expire key seconds
+  pexpire key millisconds
+  expireat key timestamp
+  pexpireat key milliseconds-timestamp
+  ```
+
+- 获取key的有效时间
+
+  ```
+  ttl key
+  pttl key
+  ```
+
+- 切换key从时效性转换为永久性
+
+  ```
+  persist key
+  ```
+
+- 查询key
+
+  ```
+  keys pattern
+  ```
+
+![image-20200626101858493](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200626101858493.png)
+
+- 为key改名
+
+  ```
+  rename key newkey
+  renamenx key newkey
+  ```
+
+- 对所有key排序
+
+  ```
+  sort
+  ```
+
+- 其他key通用操作
+
+  ```
+  help @generic
+  ```
+
+
+### 5.2 数据库通用指令
+
+- 切换数据库
+
+  ```
+  select index
+  ```
+
+- 其他操作
+
+  ```
+  quit
+  ping
+  echo message
+  ```
+
+- 数据移动
+
+  ```
+  move key db
+  ```
+
+- 数据清除
+
+  ```
+  dbsize
+  flushdb
+  flushall
+  ```
+
+## 6、Jedis
+
+- Java语言连接redis服务
+  - Jedis
+  - SpringData Redis
+  - Lettuce
+- 

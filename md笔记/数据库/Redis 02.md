@@ -81,3 +81,13 @@
 ![image-20200626154411713](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200626154411713.png)
 
 ### 2.2 AOF
+
+![image-20200627082124618](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200627082124618.png)
+
+![image-20200627082058119](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200627082058119.png)
+
+![image-20200627082243047](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200627082243047.png)
+
+![image-20200627082359787](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200627082359787.png)
+
+![image-20200627082440832](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200627082440832.png)

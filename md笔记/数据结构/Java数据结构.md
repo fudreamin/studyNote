@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: upload
+---
+
 Java数据结构和算法
 
 包括：线性结构、非线性结构
@@ -296,11 +300,11 @@ class MyQueue {
 
 - 内存存储示意图：
 
-![image-20200420111446374](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200420111446374.png)
+![image-20200420111446374](http://img.reainyday.top/image-20200420111446374.png)
 
 - 逻辑结构示意图：
 
-![image-20200420111325757](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200420111325757.png)
+![image-20200420111325757](http://img.reainyday.top/image-20200420111325757.png)
 
 - 链表是以结点的形式存储，是链式存储;
 - 每个节点都包含data域、next域：指向下一个节点;
@@ -794,7 +798,7 @@ class Boy {
 - 根据栈的定义可知，最先放入栈中元素在栈底，最后放入的元素在栈顶，而删除元素刚好相反，最后放入的元
   素最先删除，最先放入的元素最后删除。
 
-![image-20200424091956701](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200424091956701.png)
+![image-20200424091956701](http://img.reainyday.top/image-20200424091956701.png)
 
 **应用场景**
 
@@ -1257,7 +1261,7 @@ public class ReversePolishNotationTest {
 
 - 简单的说: 递归就是方法自己调用自己，每次调用时传入不同的变量，递归有助于编程者解决复杂的问，同时可以让代码变得简洁。
 
-![image-20200427082051067](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200427082051067.png)
+![image-20200427082051067](http://img.reainyday.top/image-20200427082051067.png)
 
 ```java
 public class RecursionTest {
@@ -1499,9 +1503,9 @@ public class EightEmpress2 {
 - 内部排序：指将需要处理的所有数据都加载到内部存储器(内存)中进行排序。
 - 外部排序法：数据量过大，无法全部加载到内存中，需要借助外部存储(文件等)进行排序。
 
-![](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\尚硅谷_韩顺平_图解Java数据结构和算法-已解锁.jpg)
+![](http://img.reainyday.top/%E5%B0%9A%E7%A1%85%E8%B0%B7_%E9%9F%A9%E9%A1%BA%E5%B9%B3_%E5%9B%BE%E8%A7%A3Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E5%B7%B2%E8%A7%A3%E9%94%81.jpg)
 
-![](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\排序时间复杂度.png)
+![](http://img.reainyday.top/%E6%8E%92%E5%BA%8F%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6.png)
 
 ### 6.1 时间复杂度
 
@@ -1668,9 +1672,9 @@ public class InsertionSortTest {
 - 希尔排序是希尔（Donald Shell）于1959 年提出的一种排序算法。希尔排序也是一种插入排序，它是简单插入排序经过改进之后的一个更高效的版本，也称为缩小增量排序。
 - 希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1 时，整个文件恰被分成一组，算法便终止。
 
-![](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\xierpaixu.jpg)
+![](http://img.reainyday.top/xierpaixu.jpg)
 
-![](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\xier1.jpg)
+![](http://img.reainyday.top/xier1.jpg)
 
 - 希尔排序是基于插入排序的一种算法， 在此算法基础之上增加了一个新的特性，提高了效率。希尔排序的时间的时间复杂度为O（n^3/2)希尔排序时间复杂度的下界是n*log2n。希尔排序没有快速排序算法快 O(n(logn))，因此中等大小规模表现良好，对规模非常大的数据排序不是最优选择。
 
@@ -1821,9 +1825,9 @@ public class QuickSortTest2 {
 
 图解：
 
-![](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\guibing1.jpg)
+![](http://img.reainyday.top/guibing1.jpg)
 
-![guibing2](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\guibing2.jpg)
+![guibing2](http://img.reainyday.top/guibing2.jpg)
 
 ```java
 //归并排序
@@ -1891,11 +1895,11 @@ public class MergeSortTest {
 
 图解：
 
-![](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\jishu1.jpg)
+![](http://img.reainyday.top/jishu1.jpg)
 
-![jishu2](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\jishu2.jpg)
+![jishu2](http://img.reainyday.top/jishu2.jpg)
 
-![jishu3](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\jishu3.jpg)
+![jishu3](http://img.reainyday.top/jishu3.jpg)
 
 ```java
 //基数排序
@@ -2183,7 +2187,7 @@ public class FibonacciSearch {
 
 - 图解：
 
-![](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\hashtable0.jpg)
+![](http://img.reainyday.top/hashtable0.jpg)
 
 ```java
 //哈希表测试
@@ -3009,7 +3013,7 @@ public class HeapSortTest {
 
   ​		{13, 7, 8, 3, 29, 6, 1}
 
-![](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\huffmantree1.jpg)
+![](http://img.reainyday.top/huffmantree1.jpg)
 
 ````java
 import java.util.ArrayList;

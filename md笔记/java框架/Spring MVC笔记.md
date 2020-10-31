@@ -32,7 +32,7 @@ Spring MVC 就是对这套流程的封装，屏蔽了很多底层代码，开放
 - DispatcherServlet 根据 View 进行视图渲染（将模型数据 Model 填充到视图 View 中）。
 - DispatcherServlet 将渲染后的结果响应给客户端。
 
-![1582682345743](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1582682345743.png)
+![1582682345743](http://img.reainyday.top/1582682345743.png)
 
 Spring MVC 流程非常复杂，实际开发中很简单，因为大部分的组件不需要开发者创建、管理，只需要通过配置文件的方式完成配置即可，真正需要开发者进行处理的只有 Handler 、View。
 

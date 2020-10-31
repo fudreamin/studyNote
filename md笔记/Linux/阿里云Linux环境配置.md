@@ -1,4 +1,13 @@
-# 阿里云Linux环境配置
+---
+title: 阿里云环境配置
+date: 2020-09-16 14:20:57
+categories: 
+- Linux
+---
+
+# 阿里云环境配置
+
+>  之前的学生免费试用的阿里云服务器过期了，只能再买一年重新配下环境，记录一下安装步骤，方便以后少走弯路。
 
 ## 1、MySQL
 
@@ -56,6 +65,8 @@
 6. 修改密码
 
 ```
+获取mysql初始密码: grep 'temporary password' /var/log/mysqld.log
+进入mysql: mysql -u root -p
 MySQL版本5.7.6版本以前用户可以使用如下命令：
 mysql> SET PASSWORD = PASSWORD('123456'); 
 MySQL版本5.7.6版本开始的用户可以使用如下命令：
@@ -84,24 +95,25 @@ mysql> exit;
 
 8. 连接本地navicat问题
 
-```
-进入云服务器的mysql
+   1. 必须在阿里云服务器安全组中开放3306端口
 
-mysql -u root -p password
+   2. 开放数据库的远程访问权限
 
-use mysql;
-
-ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '数据库的密码';
-```
+      ```
+      use mysql;
+      select host from user where user='root';
+      update user set host = '%' where user ='root';
+      flush privileges;
+      ```
 
 ## 2、Java环境
 
-1、传文件
+1、使用xftp上传文件
 
 2、解压缩
 
 ```
-tar -xvf mysql-8.0.20-1.el7.x86_64.rpm-bundle.tar 
+rpm -ivh jdk-8u221-linux-x64.rpm
 ```
 
 3、环境变量
@@ -116,5 +128,11 @@ JAVA_HOME=/usr/java/jdk1.8.0_221-amd64
 CLASSPATH=%JAVA_HOME%/lib:%JAVA_HOME%/jre/lib
 PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin
 export PATH CLASSPATH JAVA_HOME
+```
+
+4、让配置生效
+
+```
+source /etc/profile
 ```
 

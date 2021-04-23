@@ -435,7 +435,7 @@ public class VolatileDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            myData.addTo60();
+            myData.addTo60(); 
             System.out.println(Thread.currentThread().getName() + "更新number为" + myData.number);
         }, "AAA").start();
         System.out.println(Thread.currentThread().getName() + " mission is over");
